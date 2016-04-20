@@ -1,0 +1,105 @@
+%% Problem 1
+%
+%The program problem1() calculates the definite integral of a
+%function f over the the interval [a,b] using the composite trapezoid rule
+%with n equal subintervals. 
+%
+%Results:
+%
+%I tried the program on the function f(x) = x over the interval [0,1]
+%with n = 2 equal subintervals and I printed out the result.
+%
+%
+
+hw5dot1.problem1()
+
+f = 
+
+    @(x)x
+
+integral of f(x) = x on [0,1]
+    0.5000
+
+%% Problem 2
+%
+%The program problem2() tests the implementation of the composite
+%trapezoid rule from problem one on the integral over the following 
+%functions using n = 2 equal subintervals:
+%
+% a) f(x) = sinx on the interval [0,pi]
+% b) f(x) = e^x on the interval [0,1]
+%
+%Results:
+%
+%After approximating the integrals of the functions f(x) = sinx on 
+%the interval [0,pi] and f(x) = e^x on the interval [0,1] and 
+%comparing it to the actual value I got that 
+%
+
+hw5dot1.problem2()
+error of approximation of integral of sin(x) on [0,pi]
+    1.5000
+
+error of approximation of integral of e^x on [0,1]
+    0.0356
+
+%% Problem 3
+%
+%The program problem3() computes pi from the integral of 
+%the function f(x) = c/(1+x)^2 on the interval [a,b] where c is a constant.
+%
+%Results:
+%
+%By choosing a = 0, b = 1 and c = 4 I was able to compute pi from 
+%an integral of the form stated above using the composite trapezoid rule with
+%n=2 equal subintervals.
+%
+%
+
+hw5dot1.problem3()
+
+f = 
+
+    @(x)4/(1+x^2)
+
+pi approximation:
+    3.1000
+
+
+%% Problem 5
+%
+%The program problem5() computes the gaussian probability integral
+%by using small and large values for the lower and upper limits and 
+%using the trapezoid rule for n =100 equal subintervals. The gaussian
+%interval is then computed after first making the change of variable
+% x = -lnt
+%
+%
+%Results:
+%
+%By choosing a = 0, b = 10, 50, 100 I was able to compute pi from 
+%an integral of the form stated above using the composite trapezoid rule with
+%n=2 equal subintervals.
+%
+
+
+hw5dot1.problem5()
+error of approximation of integral of exp(-x^2) on [0,10]
+    0.7976
+
+error of approximation of integral of exp(-(log(x))^2)/x on [0.01,1]
+    0.0089
+
+error of approximation of integral of exp(-x^2) on [0,100]
+    0.8774
+
+error of approximation of integral of exp(-(log(x))^2)/x on [0.001,1]
+   8.7879e-04
+
+error of approximation of integral of exp(-x^2) on [0,1000]
+    0.8812
+
+error of approximation of integral of exp(-(log(x))^2)/x on [0.0001,1]
+   8.0299e-05
+
+diary off

@@ -1,0 +1,39 @@
+%% Problem 1
+%
+%The program problem1() finds approximate values for integrals
+%of the functions 
+%
+%       f(x) = 4/(1+x^2), on the interval [0,1]
+%       g(x) = 8*((1-x^2)^0.5 - x), on the interval [0, 1/(2^0.5)]
+%
+%using the adaptive Simpson scheme with epsilon = 0.5x10^(-5)
+%and level_max = 4.
+%
+%Results:
+%
+%Both integrals gave an approximation of pi:
+%       the integral of f on the interval [0,1] gave 3.1415927 and
+%       the integral of g on the interval [0,1/2^0.5] gave 3.1415925
+%
+%I also sketched both f(x) and g(x) by plotting 100 points in their 
+%respective intervals and I plotted the points, partitions1 and 
+%partitions2 (below), where the intervals are split.
+%
+
+hw5dot3
+
+integral of f(x) = 4/(1+x^2) on the interval [0,1]:
+   3.1415927
+
+integral of g(x) = 8*((1-x^2)^0.5 - x) on the interval [0, 1/(2^0.5)]:
+   3.1415925
+
+partitions1:
+           0   1.0000000   0.5000000   0.2500000   0.7500000
+
+partitions2:
+           0   0.7071068   0.3535534   0.1767767   0.5303301
+
+Current plot held
+Current plot held
+diary off;

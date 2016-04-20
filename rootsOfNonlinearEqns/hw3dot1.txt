@@ -1,0 +1,321 @@
+hw3dot1.problem2()
+
+%% Problem 2
+%
+%The program problem2() uses the bisection method to find a root 
+%of the equation   f(x) = 9*x^4 + 18*x^3 + 38*x^2 - 57*x + 14
+%in the interval [0,1] with an error of at most 0.5e-8
+%
+%Results:
+%
+%Twenty-eight iterations of the bisection algorithm are calculated
+%to find the approximate root x = 0.33333333 for the equation
+%f(x) = 9*x^4 + 18*x^3 + 38*x^2 - 57*x + 14 
+%in the interval [0,1] with an error of at most 0.5e-8
+%
+
+i =
+
+     1
+
+
+c =
+
+   0.500000000000000
+
+
+i =
+
+     2
+
+
+c =
+
+   0.250000000000000
+
+
+i =
+
+     3
+
+
+c =
+
+   0.375000000000000
+
+
+i =
+
+     4
+
+
+c =
+
+   0.312500000000000
+
+
+(SKIP A FEW)
+
+
+i =
+
+    24
+
+
+c =
+
+   0.333333313465118
+
+
+i =
+
+    25
+
+
+c =
+
+   0.333333343267441
+
+
+i =
+
+    26
+
+
+c =
+
+   0.333333328366280
+
+
+i =
+
+    27
+
+
+c =
+
+   0.333333335816860
+
+
+i =
+
+    28
+
+
+c =
+
+   0.333333332091570
+
+
+c =
+
+   0.333333333954215
+
+
+hw3dot1.problem3()
+
+%% Problem 3
+%
+%The program problem3() attempts to find a root of the equation tanx = x 
+%on the intervals [4,5] and [1,2] by using the bisection method 
+%
+%Results:
+%
+%Twenty-eight iterations of the bisection algorithm are calculated
+%to find the approximate root x = 1.57079633 for the equation
+%f(x) = tan(x) - x in the interval [4,5] with an error of at most 0.5e-8.
+%In the interval [1,2], the bisection algorithm diverged to the value
+%x = 4.49340946 after twenty-eight iterations.
+%
+
+i =
+
+     1
+
+
+c =
+
+   4.500000000000000
+
+
+i =
+
+     2
+
+
+c =
+
+   4.250000000000000
+
+
+i =
+
+     3
+
+
+c =
+
+   4.375000000000000
+
+
+i =
+
+     4
+
+
+c =
+
+   4.437500000000000
+
+
+(SKIP A FEW)
+
+
+i =
+
+    24
+
+
+c =
+
+   4.493409454822540
+
+
+i =
+
+    25
+
+
+c =
+
+   4.493409484624863
+
+
+i =
+
+    26
+
+
+c =
+
+   4.493409469723702
+
+
+i =
+
+    27
+
+
+c =
+
+   4.493409462273121
+
+
+i =
+
+    28
+
+
+c =
+
+   4.493409458547831
+
+
+
+i =
+
+     1
+
+
+c =
+
+   1.500000000000000
+
+
+i =
+
+     2
+
+
+c =
+
+   1.750000000000000
+
+
+i =
+
+     3
+
+
+c =
+
+   1.625000000000000
+
+
+i =
+
+     4
+
+
+c =
+
+   1.562500000000000
+
+(SKIP A FEW)
+
+i =
+
+    24
+
+
+c =
+
+   1.570796310901642
+
+
+i =
+
+    25
+
+
+c =
+
+   1.570796340703964
+
+
+i =
+
+    26
+
+
+c =
+
+   1.570796325802803
+
+
+i =
+
+    27
+
+
+c =
+
+   1.570796333253384
+
+
+i =
+
+    28
+
+
+c =
+
+   1.570796329528093
+
+
+c =
+
+   1.570796327665448
+
+
+diary off

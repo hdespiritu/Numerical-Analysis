@@ -1,0 +1,150 @@
+%% Problem 2
+%
+%The program problem2() 
+%solves the given matrix by Gaussian elimination with scaled 
+%partial pivoting using procedures Gauss and Solve
+%
+%Results:
+%The program gives the correct answer to four decimal points when
+%compared to matlab's built-in gaussian elimination function.
+%
+%
+
+hw2dot2.problem2()
+
+gauss & solve x
+    3.4606    1.5610   -2.9342   -0.4301
+
+linsolve x
+    3.4606
+    1.5610
+   -2.9342
+   -0.4301
+
+%% Problem 3
+%
+%The program problem3() solves the system given in Problem 2 again
+%except that the digit 0.3645 becomes 0.3345.
+%
+%
+%Results:
+%The reason there is such a huge difference in the solution for
+%the matrix when only one digit is slightly changed is that
+%the matrix has a condition number,K(A)=9.3588, that is 
+%roughly ten times larger than the ideal condition number
+%and ill-conditioned linear systems can display large changes 
+%in solutions when a small change in the coefficient matrix is made
+%
+
+hw2dot2.problem3()
+
+gauss & solve x
+    6.7831    3.5914   -6.4451   -1.5179
+
+linsolve x
+    6.7831
+    3.5914
+   -6.4451
+   -1.5179
+
+K(matrix)
+    9.3588
+
+
+%The program problem4() verifies the solution to the (ill-conditioned)
+%Hilbert matrix and then solves the system of equations using
+%Gauss and Solve for some values of 2 <= n <= 15 to see whether
+%the result is predicted. The computational result for n = 2 is compared 
+%to the answer done by hand to see what difficulties occured in 
+%the computer
+%
+%
+%Results:
+%The Hilbert matrix for n = 2, 5, 10 has condition numbers 
+% K(A1) = 4.3911, K(A2) = 690.3675 and K(A3) = 4.0031x10^6
+% so the respective expected loss in precision is
+%   log(4.3911) = 0.6426
+%   log(690.3675) = 2.8391
+%   log(4.0031x10^6) = 6.6024
+%which is consistent to the loss of precision seen when comparing
+%to my hand calculation and matlab's built-in gaussian elimination function
+%
+
+hw2dot2.problem4()
+gauss & solve x1
+    1.0000
+    1.0000
+
+linsolve x1
+    1.0000
+    1.0000
+
+gauss & solve x2
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+
+linsolve x2
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+
+gauss & solve x3
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+    1.0001
+    0.9998
+    1.0002
+    0.9999
+    1.0000
+
+linsolve x3
+    1.0000
+    1.0000
+    1.0000
+    1.0000
+    0.9999
+    1.0002
+    0.9997
+    1.0003
+    0.9998
+    1.0000
+
+%% Problem 9
+%
+%The program problem9() solves the given augmented matrix using
+%Gauss and Solve and then using procedure Naive_Gauss to compare
+%the results
+%
+%
+%Results:
+%Without the scaled partial pivoting the forward elimination and 
+%back-subsitution done by Naive_Gauss causes there to be alot of 
+%significant digits to be lost, whereas scaled partial pivoting
+%and backsubstitution (done by Gauss & solve) retains the significant
+%digits to allow the answer to match matlab's built-in gaussian
+%elimination function to four decimal digits.
+%
+%
+
+hw2dot2.problem9()
+
+linsolve x
+    0.2160   -0.0079    0.6352    0.7462
+
+gauss & solve x
+    0.2160   -0.0079    0.6352    0.7462
+
+naiveGauss
+   1.0e+04 *
+
+         0         0         0    0.0001    0.0001   -0.0001    3.7300
+
+diary off

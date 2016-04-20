@@ -1,0 +1,95 @@
+%% Problem 10
+%
+%The program problem10()computes the singular value decompositions of the
+%given matrices and verifies that each result satisfies the equation
+%A = UDV'
+%
+%Results:
+%A = UDV' and B = UDV' matched exactly for 4 decimal values of accuracy
+%
+%
+hw8dot2.problem10()
+
+matrix A
+     1     1
+     0     1
+     1     0
+
+UDV'
+    1.0000    1.0000
+    0.0000    1.0000
+    1.0000   -0.0000
+
+matrix B
+     1     3    -2
+     2     7     5
+    -2    -3     4
+     5    -3    -2
+
+UDV'
+    1.0000    3.0000   -2.0000
+    2.0000    7.0000    5.0000
+   -2.0000   -3.0000    4.0000
+    5.0000   -3.0000   -2.0000
+
+%% Problem 12
+%
+%The program problem12() computes the singular value decomposition of the
+%the given matrices.
+%
+%
+%Results:
+%A = UDV' , B = UDV' ,  C = UDV' amatched exactly for 
+%4 decimal values of accuracy
+%
+hw8dot2.problem12()
+
+matrix A
+     2     1    -2
+
+UDV'
+     2     1    -2
+
+matrix B
+     3
+     4
+
+UDV'
+    3.0000
+    4.0000
+
+matrix C
+    2.6962
+    7.3301
+
+UDV'
+    2.6962
+    7.3301
+
+%% Problem 13
+%
+%The program problem13() computes the eigenvalues, singular values and
+%condition number of a given matrix
+%
+%
+%Results:
+%The matrix has eigenvalues 1, 2 and 3
+%singular values 817.7597, 2.4750 and 0.0030(negligible)
+%and condition number 525.2129
+%
+hw8dot2.problem13()
+
+eigenvalues of matrix
+    1.0000
+    2.0000
+    3.0000
+
+singular values of matrix
+  817.7597
+    2.4750
+    0.0030
+
+condition number of matrix
+  525.2129
+
+diary off
